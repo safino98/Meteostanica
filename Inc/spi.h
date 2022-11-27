@@ -37,7 +37,23 @@
 void MX_SPI1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+void MX_SPI1_Init(void);
 
+unsigned char readWriteSPI1(unsigned char txData);
+void initCS_Pin(void);
+void cs_set(void);
+void cs_reset(void);
+
+void initCD_Pin(void);
+void cd_set(void);
+void cd_reset(void);
+
+void initRES_Pin(void);
+void res_set(void);
+void res_reset(void);
+
+void device_Unselect(void);
+void device_Select(void);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

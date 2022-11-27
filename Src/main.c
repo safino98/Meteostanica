@@ -21,9 +21,18 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
-#include "spi.h"
 #include "gpio.h"
+#include "usart.h"
+#include "lis3mdltr.h"
+#include "lsm6ds0.h"
+#include "stdio.h"
+#include "string.h"
+#include "dma.h"
+#include "hts221.h"
+#include "lps22hb.h"
+#include <math.h>
 #include "ili9163.h"
+#include "spi.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -98,7 +107,16 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
+  //MX_DMA_Init();
+ // MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  lsm6ds0_init();
+    hts221_init();
+    lps22hb_init();
+    lis3mdl_init();
+
+
   initCD_Pin();
    initCS_Pin();
    initRES_Pin();

@@ -17,8 +17,11 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_pwr.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dma.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_spi.h \
- ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h ../Inc/i2c.h \
- ../Inc/main.h ../Inc/spi.h ../Inc/gpio.h ../display/ili9163.h
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h \
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usart.h ../Inc/i2c.h \
+ ../Inc/main.h ../Inc/gpio.h ../Inc/usart.h ../Inc/lis3mdltr.h \
+ ../Inc/i2c.h ../Inc/lsm6ds0.h ../Inc/dma.h ../Inc/hts221.h \
+ ../Inc/lps22hb.h ../display/ili9163.h ../Inc/spi.h
 ../Inc/main.h:
 ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h:
@@ -39,8 +42,16 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dma.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_spi.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usart.h:
 ../Inc/i2c.h:
 ../Inc/main.h:
-../Inc/spi.h:
 ../Inc/gpio.h:
+../Inc/usart.h:
+../Inc/lis3mdltr.h:
+../Inc/i2c.h:
+../Inc/lsm6ds0.h:
+../Inc/dma.h:
+../Inc/hts221.h:
+../Inc/lps22hb.h:
 ../display/ili9163.h:
+../Inc/spi.h:
