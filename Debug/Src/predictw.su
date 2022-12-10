@@ -1,0 +1,4 @@
+../Src/predictw.c:27:8:station2sealevel	48	static
+../Src/predictw.c:31:8:myabs	16	static
+../Src/predictw.c:37:8:calc_zambretti	24	static
+../Src/predictw.c:152:8:weather	240	static

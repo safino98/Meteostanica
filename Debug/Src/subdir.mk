@@ -13,6 +13,7 @@ C_SRCS += \
 ../Src/lps22hb.c \
 ../Src/lsm6ds0.c \
 ../Src/main.c \
+../Src/predictw.c \
 ../Src/spi.c \
 ../Src/stm32f3xx_hal_msp.c \
 ../Src/stm32f3xx_it.c \
@@ -30,6 +31,7 @@ OBJS += \
 ./Src/lps22hb.o \
 ./Src/lsm6ds0.o \
 ./Src/main.o \
+./Src/predictw.o \
 ./Src/spi.o \
 ./Src/stm32f3xx_hal_msp.o \
 ./Src/stm32f3xx_it.o \
@@ -47,6 +49,7 @@ C_DEPS += \
 ./Src/lps22hb.d \
 ./Src/lsm6ds0.d \
 ./Src/main.d \
+./Src/predictw.d \
 ./Src/spi.d \
 ./Src/stm32f3xx_hal_msp.d \
 ./Src/stm32f3xx_it.d \
@@ -63,7 +66,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/dma.d ./Src/dma.o ./Src/dma.su ./Src/gpio.d ./Src/gpio.o ./Src/gpio.su ./Src/hts221.d ./Src/hts221.o ./Src/hts221.su ./Src/i2c.d ./Src/i2c.o ./Src/i2c.su ./Src/lis3mdltr.d ./Src/lis3mdltr.o ./Src/lis3mdltr.su ./Src/lps22hb.d ./Src/lps22hb.o ./Src/lps22hb.su ./Src/lsm6ds0.d ./Src/lsm6ds0.o ./Src/lsm6ds0.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/spi.d ./Src/spi.o ./Src/spi.su ./Src/stm32f3xx_hal_msp.d ./Src/stm32f3xx_hal_msp.o ./Src/stm32f3xx_hal_msp.su ./Src/stm32f3xx_it.d ./Src/stm32f3xx_it.o ./Src/stm32f3xx_it.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f3xx.d ./Src/system_stm32f3xx.o ./Src/system_stm32f3xx.su ./Src/usart.d ./Src/usart.o ./Src/usart.su
+	-$(RM) ./Src/dma.d ./Src/dma.o ./Src/dma.su ./Src/gpio.d ./Src/gpio.o ./Src/gpio.su ./Src/hts221.d ./Src/hts221.o ./Src/hts221.su ./Src/i2c.d ./Src/i2c.o ./Src/i2c.su ./Src/lis3mdltr.d ./Src/lis3mdltr.o ./Src/lis3mdltr.su ./Src/lps22hb.d ./Src/lps22hb.o ./Src/lps22hb.su ./Src/lsm6ds0.d ./Src/lsm6ds0.o ./Src/lsm6ds0.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/predictw.d ./Src/predictw.o ./Src/predictw.su ./Src/spi.d ./Src/spi.o ./Src/spi.su ./Src/stm32f3xx_hal_msp.d ./Src/stm32f3xx_hal_msp.o ./Src/stm32f3xx_hal_msp.su ./Src/stm32f3xx_it.d ./Src/stm32f3xx_it.o ./Src/stm32f3xx_it.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f3xx.d ./Src/system_stm32f3xx.o ./Src/system_stm32f3xx.su ./Src/usart.d ./Src/usart.o ./Src/usart.su
 
 .PHONY: clean-Src
 
